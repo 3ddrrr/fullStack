@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Casos de Estudio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header><h1>Casos de Estudio</h1></header>
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="consejos.html">Consejos Éticos</a>
+  <a href="casos.html">Casos de Estudio</a>
+  <a href="reflexiones.html">Reflexiones</a>
+  <a href="recursos.html">Recursos</a>
+</nav>
+<main>
+  <button onclick="mostrarCaso('caso1')">Caso 1: Uso Responsable</button>
+  <button onclick="mostrarCaso('caso2')">Caso 2: Uso No Ético</button>
+
+  <div id="caso1" class="detalle card" style="display:none;">
+    <p>Un estudiante usa IA para generar ideas y luego redacta su propio ensayo. Esto es ético.</p>
+  </div>
+  <div id="caso2" class="detalle card" style="display:none;">
+    <p>Un estudiante copia y pega un ensayo generado por IA sin citarlo. Esto es no ético.</p>
+  </div>
+</main>
+</body>
+</html>

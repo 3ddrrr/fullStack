@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reflexiones</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="mostrarReflexiones()">
+<header><h1>Reflexiones de Estudiantes</h1></header>
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="consejos.html">Consejos Éticos</a>
+  <a href="casos.html">Casos de Estudio</a>
+  <a href="reflexiones.html">Reflexiones</a>
+  <a href="recursos.html">Recursos</a>
+</nav>
+<main>
+  <form id="formReflexion" onsubmit="guardarReflexion(event)">
+    <input type="text" id="nombre" placeholder="Nombre"><br><br>
+    <input type="email" id="correo" placeholder="Correo"><br><br>
+    <textarea id="mensaje" placeholder="Tu reflexión..."></textarea><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Reflexiones Guardadas</h2>
+  <div id="listaReflexiones"></div>
+  <button onclick="borrarReflexiones()">Borrar reflexiones</button>
+</main>
+</body>
+</html>
